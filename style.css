@@ -111,17 +111,39 @@ p {
 }
 
 #main {
-  padding-top: 30vh;
+  padding-top: 20vh;
   padding-bottom: 20vh;
   background: url(./img/svg/bk-top-desktop.svg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
+#main:after {
+  content: "";
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  right: calc((100vw - 500px) / 2);
+  top: 15vw;
+  background: url(./img/bk-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-animation: spinZ 10s infinite;
+  animation: spinZ 10s infinite;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+
 #main h1 {
   font-size: 62px;
   letter-spacing: 0.1em;
   line-height: 1.4em;
+}
+
+.logo_higi_top {
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .main-tag {
@@ -132,6 +154,77 @@ p {
   border-radius: 100px;
   padding: 8px 25px;
   color: var(--white);
+  margin: 16px;
+}
+
+.conheca {
+  margin-top: 20px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.conheca:after {
+  content: url(./img/svg/down-link.svg);
+  width: 26px;
+  position: absolute;
+  margin-top: 70px;
+  -webkit-animation: bounce 1s infinite; /* Safari 4+ */
+  -moz-animation: bounce 1s infinite; /* Fx 5+ */
+  -o-animation: bounce 1s infinite; /* Opera 12+ */
+  animation: bounce 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@-o-keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.conheca:hover {
+  color: inherit;
 }
 
 img {
@@ -162,7 +255,7 @@ img {
     -webkit-transform: rotateZ(0deg);
   }
   100% {
-    -webkit-transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(360deg);
   }
 }
 @keyframes spinZ {
@@ -170,7 +263,7 @@ img {
     transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateZ(180deg);
+    transform: rotateZ(360deg);
   }
 }
 
@@ -204,6 +297,7 @@ footer .container {
   #main {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    background: none;
   }
   #main h1 {
     font-size: 42px;
