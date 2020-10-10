@@ -278,20 +278,20 @@ footer .container {
 
 @media (max-width: 992px) {
   #main {
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-bottom: 10vh;
     background: none;
   }
   #main h1 {
     font-size: 42px;
   }
-  #main:after {
+  .elements:after {
     content: "";
     position: absolute;
     height: 500px;
     width: 500px;
     right: calc((100vw - 500px) / 2);
-    top: 15vw;
+    top: -5vw;
     background: url(./img/bk-mobile.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -300,6 +300,12 @@ footer .container {
     animation: spinZ 10s infinite;
     animation-timing-function: linear;
     z-index: -1;
+  }
+  .logo_higi_top {
+    height: 15vh;
+  }
+  .main-tag {
+    font-size: 22px;
   }
   div.col {
     padding: 0px 15px;
@@ -327,5 +333,11 @@ footer .container {
   }
   .video p {
     font-size: 12px;
+  }
+  hr {
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 50%;
   }
 }
