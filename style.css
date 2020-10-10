@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "Margot";
-  src: url("../fonts/Margot-Bold.ttf") format("truetype");
+  src: url("./fonts/Margot-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "Margot";
-  src: url("../fonts/Margot-Regular.ttf") format("truetype");
+  src: url("./fonts/Margot-Regular.ttf") format("truetype");
   font-weight: lighter;
   font-style: normal;
   font-display: swap;
