@@ -103,19 +103,20 @@ p {
   opacity: 0.8;
 }
 
-#main .container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 #main {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background: url(./img/svg/bk-top-desktop.svg);
   background-repeat: no-repeat;
   background-position: top;
+}
+
+#main .container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #main h1 {
