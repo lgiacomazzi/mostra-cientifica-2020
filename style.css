@@ -73,7 +73,7 @@ h6 {
   font-weight: bold;
   margin-top: 1em;
   margin-bottom: 1em;
-  line-height: 100%;
+  line-height: 120%;
 }
 
 h1 {
@@ -97,6 +97,10 @@ p {
   margin-top: 0;
   margin-bottom: 1.5rem;
   opacity: 0.8;
+}
+
+p.lead {
+  font-size: 1.1em;
 }
 
 #main {
@@ -138,8 +142,8 @@ p {
 }
 
 .logo_higi_top {
-  margin: auto;
-  margin-bottom: 10px;
+  height: 15vh;
+  max-height: 150px;
 }
 
 .main-tag {
@@ -264,21 +268,27 @@ img {
 }
 
 .work .btn {
+  min-height: 30vh;
   height: 100%;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   color: inherit;
   border-color: var(--lighter-blue);
   background-color: var(--light-blue);
   border-radius: 10px;
-  padding: 20px;
+  padding: 24px;
   transition: 400ms;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 16px 0px,
     rgba(0, 0, 0, 0.16) 0px 1px 4px 0px;
 }
 
 .work .btn:hover {
-  transform: translateY(-6px);
+  transform: translateY(-6px), scale3d(1.2, 1.2, 1);
   background-color: var(--white);
+}
+
+[data-href="none"] {
+  cursor: not-allowed !important;
 }
 
 .work .btn:focus {
@@ -291,6 +301,10 @@ img {
 
 .text-green {
   color: var(--green);
+}
+
+.text-blue {
+  color: var(--lighter-blue);
 }
 
 .modal-body iframe {
@@ -357,7 +371,7 @@ footer .container {
   .elements:after {
     height: 500px;
     width: 500px;
-    right: calc((100vw - 500px) / 2);
+    /* right: calc((100vw - 500px) / 2); */
     top: -5vw;
   }
   .logo_higi_top {
@@ -378,11 +392,12 @@ footer .container {
   }
   .gif {
     height: 500px;
+    justify-content: center;
   }
   .gif:after {
     height: 600px;
     width: 600px;
-    right: calc((100vw - 600px) / 2);
+    /* right: calc((100vw - 600px) / 2); */
   }
   .modal-body iframe {
     height: 13em;
@@ -406,5 +421,8 @@ footer .container {
     margin-top: 60px;
     margin-bottom: 60px;
     width: 50%;
+  }
+  .work .btn {
+    padding: 8px;
   }
 }
