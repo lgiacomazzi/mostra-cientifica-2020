@@ -152,13 +152,11 @@ p.lead {
   align-self: center;
   font-size: 32px;
   border-radius: 100px;
-  padding: 8px 25px;
+  padding: 8px 24px;
   color: var(--white);
-  margin: 16px;
 }
 
 .conheca {
-  margin-top: 20px;
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -170,8 +168,7 @@ p.lead {
 .conheca:after {
   content: url(./img/svg/down-link.svg);
   width: 26px;
-  position: absolute;
-  margin-top: 70px;
+  position: relative;
   -webkit-animation: bounce 1s infinite; /* Safari 4+ */
   -moz-animation: bounce 1s infinite; /* Fx 5+ */
   -o-animation: bounce 1s infinite; /* Opera 12+ */
@@ -355,10 +352,6 @@ footer {
   background-color: white;
 }
 
-footer .container {
-  padding: 100px 0px;
-}
-
 @media (max-width: 992px) {
   #main {
     padding-top: 5vh;
@@ -366,7 +359,10 @@ footer .container {
     background: none;
   }
   #main h1 {
-    font-size: 42px;
+    font-size: 36px;
+  }
+  #main .main-tag {
+    font-size: 18px;
   }
   .elements:after {
     height: 500px;
