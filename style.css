@@ -281,7 +281,7 @@ img {
 }
 
 .work .btn:hover {
-  transform: translateY(-6px), scale3d(1.2, 1.2, 1);
+  transform: translateY(-6px);
   background-color: var(--white);
 }
 
